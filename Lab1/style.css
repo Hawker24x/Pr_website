@@ -1,0 +1,26 @@
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    display: block;
+    margin-bottom: 10px;
+    width: 30%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: green; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen; /* Darker green when hovered */
+}

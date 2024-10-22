@@ -1,0 +1,79 @@
+/* 1. Выделить первый элемент <li> и сделать жирным */
+li:first-child {
+    font-weight: bold;
+}
+
+/* 2. Выбрать все элементы <a>, которые являются последними дочерними элементами своего родителя, и покрасить их в красный цвет */
+a:last-child {
+    color: red;
+}
+
+/* 3. Выбрать все элементы input, которые выключены (disabled), и задать им серый фон */
+input:disabled {
+    background-color: grey;
+}
+
+/* 4. Выбрать все элементы <p>, которые являются прямыми дочерними элементами элемента <div>, и сделать текст полужирным */
+div > p {
+    font-weight: bold;
+}
+
+/* 5. Выбрать все элементы <a>, чей href начинается с https, и покрасить их в зелёный цвет */
+a[href^="https"] {
+    color: green;
+}
+
+/* 6. Выбрать все элементы input[type="text"] и обвести их рамкой 1 пиксель синего цвета */
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+/* 7. Выбрать первый и последний элемент <li> у их родителя и задать шрифт 24px */
+li:first-child, li:last-child {
+    font-size: 24px;
+}
+
+/* 8. Выбрать все элементы <p>, которые находятся внутри элемента <div>, и установить для них шрифт 16px */
+div p {
+    font-size: 16px;
+}
+
+/* 9. Выбрать input[type="checkbox"]:checked и задать им светло-голубой фон */
+input[type="checkbox"]:checked {
+    background-color: lightblue;
+}
+
+/* 10. Выбрать все элементы <a>, которые являются прямыми дочерними элементами <li>, и подчеркнуть текст */
+li > a {
+    text-decoration: underline;
+}
+
+/* 11. Выбрать второй элемент <li> и сделать его жирным */
+li:nth-child(2) {
+    font-weight: bold;
+}
+
+/* 12. Выбрать все input[type="text"], которые не являются disabled, и задать серый фон */
+input[type="text"]:not(:disabled) {
+    background-color: lightgrey;
+}
+
+/* 13. Выбрать первый и последний элемент <li> у их родителя и задать шрифт 24px */
+li:first-child, li:last-child {
+    font-size: 24px;
+}
+
+/* 14. Выбрать элемент с классом .special и сделать текст перечеркнутым */
+.special {
+    text-decoration: line-through;
+}
+
+/* 15. Выделить первую букву каждого <p> и задать размер 36px */
+p::first-letter {
+    font-size: 36px;
+}
+
+/* 16. Добавить ::after для каждого элемента <a> и вставить символ '/' */
+a::after {
+    content: "/";
+}

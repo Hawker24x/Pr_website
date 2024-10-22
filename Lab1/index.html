@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="registration-form"> 
+        <h1>Registration Form</h1>
+
+        <!-- Link to the list of lab works -->
+        <nav>
+            <a href="lab-list.html">List of Lab Works</a>
+        </nav>
+
+        <!-- Registration Form -->
+        <form action="https://webhook.site/" method="post">
+            <!-- Field for user's first name -->
+            <label for="first_name">Ім'я користувача: <sup style="color: red;">*</sup></label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <!-- Field for user's last name -->
+            <label for="last_name">Прізвище користувача: <sup style="color: red;">*</sup></label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <!-- Field for user's email -->
+            <label for="email">Адреса електронної пошти: <sup style="color: red;">*</sup></label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Field for password -->
+            <label for="password">Пароль: <sup style="color: red;">*</sup></label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Field for confirming password -->
+            <label for="confirm_password">Підтвердження паролю: <sup style="color: red;">*</sup></label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <!-- Field for birth date -->
+            <label for="birth_date">Дата народження: <sup style="color: red;">*</sup></label>
+            <input type="date" id="birth_date" name="birth_date">
+
+            <!-- Gender selection -->
+            <label for="gender">Стать: <sup style="color: red;">*</sup></label>
+            <select id="gender" name="gender" required>
+                <option value="male">Хлопець</option>
+                <option value="female">Дівчина</option>
+            </select>
+
+            <!-- Submit button -->
+            <input type="submit" value="Register">
+            <button onclick="window.location.href='Pr1/index.html';">Вернуться на главную</button>
+        </form>
+    </div>
+</body>
+</html>

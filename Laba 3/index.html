@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-like Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Боковая панель -->
+    <div class="sidebar">
+        <div class="menu">
+            <ul>
+                <li>
+                    <!-- Логотип YouTube -->
+                    <img src="images/YouTube_Logo_2017.png" alt="YouTube Logo" class="small-icon">
+                    <a href="#"><i class="fas fa-home"></i> Главная</a>
+                </li>
+                <li><a href="#"><i class="fas fa-clapperboard"></i> YouTube Shorts</a></li>
+                <li><a href="#"><i class="fas fa-user-friends"></i> Подписки</a></li>
+                <li><a href="#"><i class="fas fa-music"></i> YouTube Music</a></li>
+            </ul>
+        </div>
+        <div class="subscriptions">
+            <h2><i class="fas fa-star"></i> Подписки</h2>
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i> WAS: Популярная история</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> TheDRZJ</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> ROZETKA</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Алексей Макаров</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> ROZETKA GAMES</a></li>
+            </ul>
+            <a href="#"><i class="fas fa-plus"></i> Показать ещё</a>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <div class="content">
+        <!-- Поисковая строка -->
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск">
+        </div>
+
+        <!-- Верхнее меню с фильтрами -->
+        <div class="navigation">
+            <a href="#"><i class="fas fa-th"></i> Все</a>
+            <a href="#"><i class="fas fa-gamepad"></i> Игры</a>
+            <a href="#"><i class="fas fa-music"></i> Музыка</a>
+            <a href="#"><i class="fas fa-video"></i> Прямая трансляция</a>
+            <a href="#"><i class="fas fa-newspaper"></i> Новости</a>
+            <a href="#"><i class="fas fa-map"></i> Приключения</a>
+            <a href="#"><i class="fas fa-book"></i> Образовательные</a>
+            <a href="#"><i class="fas fa-film"></i> Мультфильмы</a>
+        </div>
+
+        <!-- Иконки в правом верхнем углу -->
+        <div class="icons">
+            <i class="fas fa-video" title="Загрузить видео"></i>
+            <i class="fas fa-bell" title="Уведомления"></i>
+            <div class="profile-icon">B</div> <!-- Временно инициал, можно заменить на картинку -->
+        </div>
+
+        <!-- Сетка видео с реальными изображениями -->
+        <div class="video-grid">
+            <a href="https://www.youtube.com/watch?v=VSf3NAv3Jbg" target="_blank" class="video-item">
+                <img src="images/video1.png" alt="Thumbnail 1">
+                <p>АЛЬЦЕСТ РАЗГАДЫВАЕТ ТАЙНЫ АВТОРА ЗАПИСОК? Нарезки Альцеста | Майншилд 4</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=cQ4OHNVai30&t=726s" target="_blank" class="video-item">
+                <img src="images/video2.png" alt="Thumbnail 2">
+                <p>UBISOFT ПРОДАЮТ (дождались)</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Ddd8IOSXnK8" target="_blank" class="video-item">
+                <img src="images/video3.png" alt="Thumbnail 3">
+                <p>Lp. Сердце Вселенной #26 НЕПРАВИЛЬНЫЙ РЕБЁНОК [Багрянник] • Майнкрафт</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=FaETfw8tl8c" target="_blank" class="video-item">
+                <img src="images/video4.png" alt="Thumbnail 4">
+                <p>Самый тупой читер в истории | Расследование</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=cqkhbKOnF6Q" target="_blank" class="video-item">
+                <img src="images/video5.png" alt="Thumbnail 5">
+                <p>Повестка добралась и до игровых движков | Godot и Unreal Engine в центре драмы!</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=3Dnjea1fyrQ" target="_blank" class="video-item">
+                <img src="images/video6.png" alt="Thumbnail 6">
+                <p>САМЫЙ НАГЛЫЙ КЛОН Hollow Knight | Deviator обзор</p>
+            </a>
+        </div>
+    </div>
+    <button onclick="window.location.href='Pr1/index.html';">Вернуться на главную</button>
+</body>
+</html>

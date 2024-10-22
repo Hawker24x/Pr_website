@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+.subscriptions h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subscriptions ul li {
+    margin-bottom: 10px;
+}
+
+.subscriptions ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    padding: 8px;
+    display: block;
+    border-radius: 8px;
+}
+
+.subscriptions ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+.subscriptions a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #065fd4;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.subscriptions a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #f1f1f1;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 80%; /* Уменьшена ширина до 80% */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    margin-left: auto;
+}
+
+.search-bar input:focus {
+    border-color: #065fd4;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.video-item p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.video-item p:hover {
+    color: #065fd4;
+    cursor: pointer;
+}
+
+.small-icon {
+    width: 100px; /* Ширина логотипа */
+    height: auto; /* Сохраняем пропорции */
+    display: block;
+    margin: 0 0 10px 5%; /* Отрицательный отступ слева для смещения */
+}
+
+.icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons img {
+    width: 24px; /* Устанавливаем ширину 24px */
+    height: auto; /* Автоматически подгоняем высоту для сохранения пропорций */
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 32px; /* Увеличиваем размер иконки профиля */
+    height: 32px;
+    border-radius: 50%; /* Делаем её круглой */
+    background-color: #008080; /* Цвет фона (замените на нужный) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
