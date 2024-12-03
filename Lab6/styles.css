@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #754769;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+/* Общие стили для всех покемонов */
+.row {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Увеличиваем высоту строки для крупных моделей */
+    overflow: hidden;
+}
+
+.pokemon,
+.pokemon_Litwick {
+    position: absolute;
+    top: 0;
+    left: -200px; /* Начальная позиция за пределами экрана */
+    width: 200px; /* Увеличенный размер покемонов */
+    height: 300px; /* Пропорциональная высота покемонов */
+    animation: move 5s linear infinite;
+    
+    img {
+        width: 200px;
+    }
+}
+
+.pokemon_Litwick img {
+    width: 100px;
+}
+
+.row:nth-child(2) .pokemon {
+    animation-duration: 6s; /* Скорость покемона во втором ряду */
+}
+
+.row:nth-child(3) .pokemon {
+    animation-duration: 7s; /* Скорость покемона в третьем ряду */
+}
+
+/* Анимация движения */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(110vw); /* Двигается за экран */
+    }
+}
