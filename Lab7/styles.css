@@ -1,0 +1,166 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #004d00, #1e6400); /* Глибокий зелений */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Анімація сніжинок */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10%;
+    color: #ffffff; /* Білий для сніжинок */
+    font-size: 1.5rem;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+/* Рандомізація сніжинок */
+.snowflake:nth-child(1) { left: 3%; animation-duration: 8s; font-size: 1.2rem; }
+.snowflake:nth-child(2) { left: 10%; animation-duration: 10s; animation-delay: 2s; font-size: 1.5rem; }
+.snowflake:nth-child(3) { left: 18%; animation-duration: 12s; animation-delay: 1s; font-size: 2rem; }
+.snowflake:nth-child(4) { left: 26%; animation-duration: 7s; animation-delay: 3s; font-size: 1.8rem; }
+.snowflake:nth-child(5) { left: 34%; animation-duration: 9s; animation-delay: 0s; font-size: 1.6rem; }
+.snowflake:nth-child(6) { left: 42%; animation-duration: 11s; animation-delay: 4s; font-size: 1.3rem; }
+.snowflake:nth-child(7) { left: 50%; animation-duration: 10s; animation-delay: 2s; font-size: 2rem; }
+.snowflake:nth-child(8) { left: 58%; animation-duration: 8s; animation-delay: 1s; font-size: 1.7rem; }
+.snowflake:nth-child(9) { left: 66%; animation-duration: 14s; animation-delay: 5s; font-size: 1.4rem; }
+.snowflake:nth-child(10) { left: 74%; animation-duration: 13s; animation-delay: 3s; font-size: 1.6rem; }
+.snowflake:nth-child(11) { left: 82%; animation-duration: 9s; animation-delay: 0s; font-size: 1.8rem; }
+.snowflake:nth-child(12) { left: 90%; animation-duration: 12s; animation-delay: 2s; font-size: 1.2rem; }
+.snowflake:nth-child(13) { left: 15%; animation-duration: 11s; animation-delay: 1s; font-size: 1.5rem; }
+.snowflake:nth-child(14) { left: 37%; animation-duration: 10s; animation-delay: 4s; font-size: 1.4rem; }
+.snowflake:nth-child(15) { left: 63%; animation-duration: 8s; animation-delay: 3s; font-size: 1.9rem; }
+
+@keyframes fall {
+    0% { transform: translateY(-100px) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ff0033; /* Однотонний червоний фон */
+    color: #fff;
+    position: relative;
+}
+
+.header__title {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.header__subtitle {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.header__line {
+    height: 4px;
+    background: linear-gradient(90deg, #fff, #ffcc00, #fff); /* Золота лінія */
+    width: 90%;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Card */
+.card {
+    text-align: center;
+    background-color: #fff;
+    color: #004d00; /* Глибокий зелений */
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card__decor {
+    height: 10px;
+    background: linear-gradient(90deg, #ff0033, #ffcc00, #ff0033); /* Червоний і золотий */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card__decor--bottom {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.card__title {
+    font-size: 2rem;
+    color: #ff0033; /* Яскраво червоний */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.card__text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px 10px;
+    background: #004d00; /* Темно-зелений */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+}
+
+.footer__line {
+    height: 4px;
+    background: linear-gradient(90deg, #fff, #ffcc00, #fff); /* Золота лінія */
+    width: 90%;
+    margin: 0 auto 10px;
+    border-radius: 2px;
+}
+
+.footer__text {
+    font-size: 0.9rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Стиль для текстового поля */
+textarea.card__text {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    font-size: 1rem;
+    color: #004d00; /* Глибокий зелений */
+    border: 2px solid #ff0033; /* Яскраво червоний */
+    border-radius: 10px;
+    padding: 10px;
+    resize: none; /* Заборонити зміну розміру */
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Зміна рамки при фокусі */
+textarea.card__text:focus {
+    border-color: #ffcc00; /* Золотий */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
