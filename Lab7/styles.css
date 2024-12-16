@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #004d00, #1e6400); /* Глибокий зелений */
+    background: linear-gradient(120deg, #2b1055, #7597de); /* Глубокий синий и нежный голубой */
     color: #fff;
     overflow-x: hidden;
 }
@@ -54,7 +54,7 @@ body {
 .header {
     text-align: center;
     padding: 30px 20px;
-    background-color: #ff0033; /* Однотонний червоний фон */
+    background-color: #6a0572; /* Фиолетовый */
     color: #fff;
     position: relative;
 }
@@ -74,7 +74,7 @@ body {
 
 .header__line {
     height: 4px;
-    background: linear-gradient(90deg, #fff, #ffcc00, #fff); /* Золота лінія */
+    background: linear-gradient(90deg, #058956, #c7fff5, #058956); /* Тёплый градиент */
     width: 90%;
     margin: 15px auto 0;
     border-radius: 2px;
@@ -83,8 +83,8 @@ body {
 /* Card */
 .card {
     text-align: center;
-    background-color: #fff;
-    color: #004d00; /* Глибокий зелений */
+    background-color: #c4cfff; /* Светло-сиреневый */
+    color: #4b0082; /* Индиго */
     border-radius: 15px;
     max-width: 700px;
     margin: 30px auto;
@@ -95,7 +95,7 @@ body {
 
 .card__decor {
     height: 10px;
-    background: linear-gradient(90deg, #ff0033, #ffcc00, #ff0033); /* Червоний і золотий */
+    background: linear-gradient(90deg, #3200ff, #90c5f7, #3200ff); /* Апельсиновый градиент */
     border-radius: 5px;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -108,21 +108,22 @@ body {
 
 .card__title {
     font-size: 2rem;
-    color: #ff0033; /* Яскраво червоний */
+    color: #ff69b4; /* Розовый */
     margin-bottom: 15px;
     text-shadow: 1px 1px 3px #000;
 }
 
-.card__text {
+.card__message {
     font-size: 1.2rem;
     line-height: 1.6;
+    color: #00008b; /* Темно-синий */
 }
 
 /* Footer */
 .footer {
     text-align: center;
     padding: 15px 10px;
-    background: #004d00; /* Темно-зелений */
+    background: #004d99; /* Насыщенный синий */
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -131,7 +132,7 @@ body {
 
 .footer__line {
     height: 4px;
-    background: linear-gradient(90deg, #fff, #ffcc00, #fff); /* Золота лінія */
+    background: linear-gradient(90deg, #32cd32, #add8e6, #32cd32); /* Зеленый и голубой */
     width: 90%;
     margin: 0 auto 10px;
     border-radius: 2px;
@@ -141,26 +142,4 @@ body {
     font-size: 0.9rem;
     margin: 0;
     text-shadow: 1px 1px 2px #000;
-}
-
-/* Стиль для текстового поля */
-textarea.card__text {
-    width: calc(100% - 20px);
-    max-width: calc(100% - 20px);
-    font-size: 1rem;
-    color: #004d00; /* Глибокий зелений */
-    border: 2px solid #ff0033; /* Яскраво червоний */
-    border-radius: 10px;
-    padding: 10px;
-    resize: none; /* Заборонити зміну розміру */
-    outline: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Зміна рамки при фокусі */
-textarea.card__text:focus {
-    border-color: #ffcc00; /* Золотий */
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
 }
